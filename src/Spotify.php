@@ -14,7 +14,7 @@ class Spotify
     private $clientSecret;
     private $authCode;
     private $redirect_uri;
-    private $scopes = 'user-read-private user-read-email streaming app-remote-control user-read-playback-state user-read-currently-playing 
+    private $scopes = 'user-read-private user-read-email streaming app-remote-control user-read-playback-state user-read-currently-playing
 user-modify-playback-state user-read-playback-position user-read-recently-played';
 
     public function __construct($clientId, $clientSecret, $authCode)
@@ -23,7 +23,7 @@ user-modify-playback-state user-read-playback-position user-read-recently-played
         $this->clientSecret = $clientSecret;
     }
 
-    public function getSpotfiyData(): array
+    public function getSpotifyData(): array
     {
         return $this->getCurrentlyPlaying();
     }
